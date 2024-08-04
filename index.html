@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Group 4</title>
+</head>
+
+<body style="color: #062787; background-color: navajowhite;">
+    <div style=" width: 500px; margin:auto">
+    <form>
+        <h1 style="text-align: center;">PUBLIC UNIVERSITY SELECTION APPLICATION FORM </h1>
+        <hr color="#062787">
+        <fieldset  style="background-color: azure;">
+            <legend>
+                <font size="5">Personal Details</font>
+            </legend>
+            <label for="fname">First Name </label>
+            <input name="Fname" type="text" id="fname">
+            <br>
+            <br>
+
+            <label for="mname">Middle Name </label>
+            <input name="Mname" type="text" id="mname">
+            <br>
+            <br>
+
+            <label for="lname">Last Name </label>
+            <input name="Lname" type="text" id="lname" > <br><br>
+
+            <label for="dbirth">Date of birth </label>
+            <input name="Dbirth" type="date" id="dbirth" max="2010-01-01"><br><br>
+
+            <label>Gender </label><br>
+            <input name="gender" type="radio" id="Male"><label for="Male">Male</label><br>
+            <input name="gender" type="radio" id="Female"><label for="Female">Female</label>
+
+        </fieldset > <br><br>
+
+        <fieldset  style="background-color: azure;">
+            <legend>
+                <font size="5">Contact Information</font>
+            </legend>
+            <label for="Home-Address"> Home Address </label> <br>
+            <textarea rows="3" cols="50" name="adress" id="Home-Address"></textarea> <br><br>
+
+            <label for="Pno">Phone Number</label>
+            <input type="tel" name="pnumber" id="Pno" placeholder="Phone Number" required
+                pattern="0[8-9]{2}[0-9]{7}"><br><br>
+
+            <label for="Email-Address"> Email Address </label>
+            <input type="email" name="Email" id="Email-Address" placeholder="Email Address"><br><br>
+
+        </fieldset ><br><br>
+
+        <fieldset  style="background-color: azure;">
+            <legend>
+                <font size="5">Emergency Contact</font>
+            </legend>
+            <label for="name" style="width: 100px;">Name</label>
+            <input type="text" name="Name" id="name" placeholder="Enter Your name"> <br><br>
+
+            <label for="Relationship" style=" width: 100px;">Relationship</label>
+            <select name="relationship" id="Relationship">
+                <option>Father</option>
+                <option>Mother</option>
+                <option>Brother</option>
+                <option>Boy/Girl friend</option>
+            </select> <br><br>
+
+            <label for="other" style="width: 100px;"> Other</label>
+            <input type="text" id="other"> <br><br>
+
+            <label for="Pno" style="width: 100px;">Phone Number</label>
+            <input type="tel" name="pnumber" id="Pno" placeholder="Phone Number" required pattern="0[8-9]{2}[0-9]{7}">
+        </fieldset > <br>
+
+        <fieldset  style="background-color: azure;">
+            <legend>
+                <font size="5">Education Details </font>
+            </legend>
+            <label for="school" style=" width: 150px;"> Previous School Name</label>
+            <input type="text" name="School" id="school"> <br><br>
+
+            <label>Qualification </label><br>
+            <input name="qualify" type="radio" id="MSCE"><label for="qualify">MSCE</label><br>
+            <input name="qualify" type="radio" id="IGSCE"><label for="qualify">IGSCE</label><br><br>
+
+            <label for="year">Qualification Year</label>
+            <select name="Year" id="year">
+                <option>2022</option>
+                <option>2023</option>
+                <option>2024</option>
+            </select> <br><br>
+
+            <label for="point">Lowest Point</label>
+            <select name="Year" id="point">
+               
+                <option>1 (A*)</option>
+                <option>2 (A)</option>
+                <option>3 (B*)</option>
+                <option>4 (B)</option>
+                <option>5 (C)</option>
+                <option>6 (E)</option>
+                <option>7 (F)</option>
+                <option>8 (G)</option>
+                <option>9 (O)</option>
+            </select><br><br>
+
+            <label for="Point">Highest Point</label>
+            <select name="Year" id="Point">
+                <option>1 (A*)</option>
+                <option>2 (A)</option>
+                <option>3 (B*)</option>
+                <option>4 (B)</option>
+                <option>5 (C)</option>
+                <option>6 (E)</option>
+                <option>7 (F)</option>
+                <option>8 (G)</option>
+                <option>9 (O)</option>
+              
+
+            </select>
+            <br>
+            <br>
+            <label for="Tpoint">Total points</label>
+            <input type="number" name="Points" id="Tpoint" min="6" max="48"> <br><br>
+
+            <p><b>NOTE:</b> The IGSCE equivalent of MSCE is in the brackets</p>
+
+
+        </fieldset >
+
+        <fieldset  style="background-color:azure;">
+            <legend>
+                <font size="5">University Choices</font>
+            </legend>
+            <fieldset style="background-color:#edc489;">
+                <label><b>Choice 1</b></label> <br>
+                <label for="Varsity">University Name</label>
+                <select name="choice" id="Varsity">
+                    <option>LUANAR</option>
+                    <option>MUST</option>
+                    <option>CU</option>
+                    <option>DMI</option>
+                    <option>UNILIA</option>
+                    <option>UNIMA</option>
+                    <option>KuHeS</option>
+                </select> <br><br>
+
+                <label for="program">program of choice</label>
+                <select name="pg" id="program">
+                    <option>Bachelor of Science in Veterinary Medicine</option>
+                    <option>Bachelor of Science in Food Science and Technology</option>
+                    <option>Bachelor of Science in Disaster Risk Management</option>
+                    <option>Bachelor of Education</option>
+                    <option>Bachelor of Applied Statistical Sciences</option>
+                    <option>Bachelor of Science (nursing and midwifery)</option>
+                    <option>Business Administration</option>
+                    <option>Bachelor of Commerce in Business Administration</option>
+                    <option>Bachelor of Business Administration</option>
+                    <option>Bachelor of Education in Humanities</option>
+                    <option>Bachelor of Education</option>
+                    <option>Bachelor of Science in Computer Science</option>
+                    <option>Bachelor of Medicine in Surgery</option>
+                    <option>Bachelor of Science in Medical Laboratory Sciences</option>
+                </select>
+            </fieldset >
+            <br>
+
+            <fieldset  style="background-color:#edc489;">
+                <label><b>Choice 2</b></label> <br>
+                <label>University Name</label>
+                <select name="choice" id="veste">
+                    <option>LUANAR</option>
+                    <option>MUST</option>
+                    <option>CU</option>
+                    <option>DMI</option>
+                    <option>UNILIA</option>
+                    <option>UNIMA</option>
+                    <option>KuHeS</option>
+                </select> <br><br>
+
+                <label>program of choice</label>
+                <select name="pg" id="program">
+                    <option>Bachelor of Science in Veterinary Medicine</option>
+                    <option>Bachelor of Science in Food Science and Technology</option>
+                    <option>Bachelor of Science in Disaster Risk Management</option>
+                    <option>Bachelor of Education</option>
+                    <option>Bachelor of Applied Statistical Sciences</option>
+                    <option>Bachelor of Science (nursing and midwifery)</option>
+                    <option>Business Administration</option>
+                    <option>Bachelor of Commerce in Business Administration</option>
+                    <option>Bachelor of Business Administration</option>
+                    <option>Bachelor of Education in Humanities</option>
+                    <option>Bachelor of Education</option>
+                    <option>Bachelor of Science in Computer Science</option>
+                    <option>Bachelor of Medicine in Surgery</option>
+                    <option>Bachelor of Science in Medical Laboratory Sciences</option>
+                </select>
+            </fieldset >
+            <br>
+
+            <fieldset style="background-color: #edc489;">
+                <label><b>Choice 3</b></label> <br>
+                <label>University Name</label>
+                <select name="choice" id="veste">
+                    <option>LUANAR</option>
+                    <option>MUST</option>
+                    <option>CU</option>
+                    <option>DMI</option>
+                    <option>UNILIA</option>
+                    <option>UNIMA</option>
+                    <option>KuHeS</option>
+                </select> <br><br>
+
+                <label>program of choice</label>
+                <select name="pg" id="program">
+                    <option>Bachelor of Science in Veterinary Medicine</option>
+                    <option>Bachelor of Science in Food Science and Technology</option>
+                    <option>Bachelor of Science in Disaster Risk Management</option>
+                    <option>Bachelor of Education</option>
+                    <option>Bachelor of Applied Statistical Sciences</option>
+                    <option>Bachelor of Science (nursing and midwifery)</option>
+                    <option>Business Administration</option>
+                    <option>Bachelor of Commerce in Business Administration</option>
+                    <option>Bachelor of Business Administration</option>
+                    <option>Bachelor of Education in Humanities</option>
+                    <option>Bachelor of Education</option>
+                    <option>Bachelor of Science in Computer Science</option>
+                    <option>Bachelor of Medicine in Surgery</option>
+                    <option>Bachelor of Science in Medical Laboratory Sciences</option>
+                </select>
+            </fieldset >
+        </fieldset >
+
+        <br><br>
+        <input type="submit" value="submit" style="background-color:#062787; color: aliceblue;">
+    </form>
+</div>
+</body>
+
+</html>
