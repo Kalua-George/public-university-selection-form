@@ -15,7 +15,7 @@
                 <font size="5">Personal Details</font>
             </legend>
             <label for="Fname">First Name </label>
-            <input name="Fname" type="text" id="Fname">
+            <input name="Fname" type="text" id="Fname" required>
             <br>
             <br>
 
@@ -25,14 +25,14 @@
             <br>
 
             <label for="lname">Last Name </label>
-            <input name="Lname" type="text" id="lname" > <br><br>
+            <input name="Lname" type="text" id="lname" required> <br><br>
 
             <label for="dbirth">Date of birth </label>
-            <input name="Dbirth" type="date" id="dbirth" max="2010-01-01"><br><br>
+            <input name="Dbirth" type="date" id="dbirth" max="2010-01-01" min="1964-01-01" required><br><br>
 
             <label>Gender </label><br>
-            <input name="gender" type="radio" id="Male"><label for="Male">Male</label><br>
-            <input name="gender" type="radio" id="Female"><label for="Female">Female</label>
+            <input name="gender" type="radio" id="Male" required><label for="Male">Male</label><br>
+            <input name="gender" type="radio" id="Female" required><label for="Female">Female</label>
 
         </fieldset > <br><br>
 
@@ -41,11 +41,11 @@
                 <font size="5">Contact Information</font>
             </legend>
             <label for="Home-Address"> Home Address </label> <br>
-            <textarea rows="3" cols="50" name="adress" id="Home-Address"></textarea> <br><br>
+            <textarea rows="3" cols="50" name="adress" id="Home-Address" required ></textarea> <br><br>
 
             <label for="Pno">Phone Number</label>
             <input type="tel" name="pnumber" id="Pno" placeholder="Phone Number" required
-                pattern="0[8-9]{2}[0-9]{7}"><br><br>
+                pattern="0[8-9]{2}[0-9]{7}" title="e.g. 099*******"><br><br>
 
             <label for="Email-Address"> Email Address </label>
             <input type="email" name="Email" id="Email-Address" placeholder="Email Address"><br><br>
@@ -57,21 +57,21 @@
                 <font size="5">Emergency Contact</font>
             </legend>
             <label for="name" style="width: 100px;">Name</label>
-            <input type="text" name="Name" id="name" placeholder="Enter Your name"> <br><br>
+            <input type="text" name="Name" id="name" placeholder="Enter name" required> <br><br>
 
             <label for="Relationship" style=" width: 100px;">Relationship</label>
-            <select name="relationship" id="Relationship">
-                <option>Father</option>
-                <option>Mother</option>
+            <select name="relationship" id="Relationship" required>
+                <option>Parent</option>
+                <option>Sister</option>
                 <option>Brother</option>
-                <option>Boy/Girl friend</option>
+                <option>Other</option>
             </select> <br><br>
 
             <label for="other" style="width: 100px;"> Other</label>
             <input type="text" id="other"> <br><br>
 
             <label for="Pno" style="width: 100px;">Phone Number</label>
-            <input type="tel" name="pnumber" id="Pno" placeholder="Phone Number" required pattern="0[8-9]{2}[0-9]{7}">
+            <input type="tel" name="pnumber" id="Pno" placeholder="Phone Number" required pattern="0[8-9]{2}[0-9]{7}" title="e.g. 099*******">
         </fieldset > <br>
 
         <fieldset  style="background-color: azure;">
@@ -79,17 +79,17 @@
                 <font size="5">Education Details </font>
             </legend>
             <label for="school" style=" width: 150px;"> Previous School Name</label>
-            <input type="text" name="School" id="school"> <br><br>
+            <input type="text" name="School" id="school" required> <br><br>
 
             <label>Qualification </label><br>
-            <input name="qualify" type="radio" id="MSCE"><label for="qualify">MSCE</label><br>
-            <input name="qualify" type="radio" id="IGSCE"><label for="qualify">IGSCE</label><br><br>
+            <input name="qualify" type="radio" id="MSCE"><label for="qualify" required>MSCE</label><br>
+            <input name="qualify" type="radio" id="IGSCE"><label for="qualify" required>IGSCE</label><br><br>
 
             <label for="year">Qualification Year</label>
             <select name="Year" id="year">
-                <option>2022</option>
-                <option>2023</option>
-                <option>2024</option>
+                <option required>2022</option>
+                <option required>2023</option>
+                <option required>2024</option>
             </select> <br><br>
 
             <label for="point">Lowest Point</label>
@@ -123,7 +123,7 @@
             <br>
             <br>
             <label for="Tpoint">Total points</label>
-            <input type="number" name="Points" id="Tpoint" min="6" max="48"> <br><br>
+            <input type="number" name="Points" id="Tpoint" min="6" max="48" required> <br><br>
 
             <p><b>NOTE:</b> The IGSCE equivalent of MSCE is in the brackets</p>
 
@@ -134,101 +134,57 @@
             <legend>
                 <font size="5">University Choices</font>
             </legend>
-            <fieldset style="background-color:#edc489;">
+            <fieldset  style="background-color:#edc489;">
                 <label><b>Choice 1</b></label> <br>
-                <label for="Varsity">University Name</label>
-                <select name="choice" id="Varsity">
-                    <option>LUANAR</option>
-                    <option>MUST</option>
-                    <option>CU</option>
-                    <option>DMI</option>
-                    <option>UNILIA</option>
-                    <option>UNIMA</option>
-                    <option>KuHeS</option>
-                </select> <br><br>
-
-                <label for="program">program of choice</label>
+                
+                <label>program of choice</label>
                 <select name="pg" id="program">
-                    <option>Bachelor of Science in Veterinary Medicine</option>
-                    <option>Bachelor of Science in Food Science and Technology</option>
-                    <option>Bachelor of Science in Disaster Risk Management</option>
-                    <option>Bachelor of Education</option>
-                    <option>Bachelor of Applied Statistical Sciences</option>
-                    <option>Bachelor of Science (nursing and midwifery)</option>
-                    <option>Business Administration</option>
-                    <option>Bachelor of Commerce in Business Administration</option>
-                    <option>Bachelor of Business Administration</option>
-                    <option>Bachelor of Education in Humanities</option>
-                    <option>Bachelor of Education</option>
-                    <option>Bachelor of Science in Computer Science</option>
-                    <option>Bachelor of Medicine in Surgery</option>
-                    <option>Bachelor of Science in Medical Laboratory Sciences</option>
+                    <option>Bachelor of Science in Veterinary Medicine (LUANAR)</option>
+                    <option>Bachelor of Science in Food Science and Technology (LUANAR)</option>
+                    <option>Bachelor of Science in Disaster Risk Management (MUST)</option>
+                    <option>Bachelor of Arts in African Musicology (MUST)</option>
+                    <option>Bachelor of Education (MUST)</option>
+                    <option>Bachelor of Education (UNIMA)</option>
+                    <option>Bachelor of Science in Computer Science (UNIMA)</option>
+                    <option>Bachelor of Medicine in Surgery (KuHeS)</option>
+                    <option>Bachelor of Science in Medical Laboratory Sciences (KuHeS)</option>
                 </select>
             </fieldset >
             <br>
 
             <fieldset  style="background-color:#edc489;">
                 <label><b>Choice 2</b></label> <br>
-                <label>University Name</label>
-                <select name="choice" id="veste">
-                    <option>LUANAR</option>
-                    <option>MUST</option>
-                    <option>CU</option>
-                    <option>DMI</option>
-                    <option>UNILIA</option>
-                    <option>UNIMA</option>
-                    <option>KuHeS</option>
-                </select> <br><br>
-
+                
                 <label>program of choice</label>
                 <select name="pg" id="program">
-                    <option>Bachelor of Science in Veterinary Medicine</option>
-                    <option>Bachelor of Science in Food Science and Technology</option>
-                    <option>Bachelor of Science in Disaster Risk Management</option>
-                    <option>Bachelor of Education</option>
-                    <option>Bachelor of Applied Statistical Sciences</option>
-                    <option>Bachelor of Science (nursing and midwifery)</option>
-                    <option>Business Administration</option>
-                    <option>Bachelor of Commerce in Business Administration</option>
-                    <option>Bachelor of Business Administration</option>
-                    <option>Bachelor of Education in Humanities</option>
-                    <option>Bachelor of Education</option>
-                    <option>Bachelor of Science in Computer Science</option>
-                    <option>Bachelor of Medicine in Surgery</option>
-                    <option>Bachelor of Science in Medical Laboratory Sciences</option>
+                    <option required>Bachelor of Science in Veterinary Medicine (LUANAR)</option>
+                    <option required>Bachelor of Science in Food Science and Technology (LUANAR)</option>
+                    <option required>Bachelor of Science in Disaster Risk Management (MUST)</option>
+                    <option required>Bachelor of Arts in African Musicology (MUST)</option>
+                    <option required>Bachelor of Education (MUST)</option>
+                    <option required>Bachelor of Education (UNIMA)</option>
+                    <option required>Bachelor of Science in Computer Science (UNIMA)</option>
+                    <option required>Bachelor of Medicine in Surgery (KuHeS)</option>
+                    <option required>Bachelor of Science in Medical Laboratory Sciences (KuHeS)</option>
                 </select>
             </fieldset >
             <br>
 
-            <fieldset style="background-color: #edc489;">
+            <fieldset  style="background-color:#edc489;">
                 <label><b>Choice 3</b></label> <br>
-                <label>University Name</label>
-                <select name="choice" id="veste">
-                    <option>LUANAR</option>
-                    <option>MUST</option>
-                    <option>CU</option>
-                    <option>DMI</option>
-                    <option>UNILIA</option>
-                    <option>UNIMA</option>
-                    <option>KuHeS</option>
-                </select> <br><br>
-
+                
                 <label>program of choice</label>
                 <select name="pg" id="program">
-                    <option>Bachelor of Science in Veterinary Medicine</option>
-                    <option>Bachelor of Science in Food Science and Technology</option>
-                    <option>Bachelor of Science in Disaster Risk Management</option>
-                    <option>Bachelor of Education</option>
-                    <option>Bachelor of Applied Statistical Sciences</option>
-                    <option>Bachelor of Science (nursing and midwifery)</option>
-                    <option>Business Administration</option>
-                    <option>Bachelor of Commerce in Business Administration</option>
-                    <option>Bachelor of Business Administration</option>
-                    <option>Bachelor of Education in Humanities</option>
-                    <option>Bachelor of Education</option>
-                    <option>Bachelor of Science in Computer Science</option>
-                    <option>Bachelor of Medicine in Surgery</option>
-                    <option>Bachelor of Science in Medical Laboratory Sciences</option>
+                    <option required>Bachelor of Science in Veterinary Medicine (LUANAR)</option>
+                    <option required>Bachelor of Science in Food Science and Technology (LUANAR)</option>
+                    <option required>Bachelor of Science in Disaster Risk Management (MUST)</option>
+                    <option required>Bachelor of Arts in African Musicology (MUST)</option>
+                    <option required>Bachelor of Arts in African Musicology (MUST)</option>
+                    <option required>Bachelor of Education (MUST)</option>
+                    <option required>Bachelor of Education (UNIMA)</option>
+                    <option required>Bachelor of Science in Computer Science (UNIMA)</option>
+                    <option required>Bachelor of Medicine in Surgery (KuHeS)</option>
+                    <option required>Bachelor of Science in Medical Laboratory Sciences (KuHeS)</option>
                 </select>
             </fieldset >
         </fieldset >
